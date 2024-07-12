@@ -1,0 +1,32 @@
+import react from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import BottomTabScreen from "./Screens/BottomTabScreen";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./Screens/HomeScreen";
+import NoticeScreen from "./Screens/NoticeScreen";
+import TemplateScreen from "./Screens/PdfScreen";
+import AnotherScreen from "./Screens/AnotherScreen";
+
+
+// const App = () => {
+  const Stack = createNativeStackNavigator();
+export default function App() {
+return(
+  <NavigationContainer>
+    <Stack.Navigator>
+    <Stack.Screen name="botton"
+     component={BottomTabScreen} 
+     options={{headerShown: false}} />
+    <Stack.Screen name="home" component={HomeScreen} options={{headerShown: false}} />
+    <Stack.Screen name="notice" component ={NoticeScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="template" component={TemplateScreen} />
+    <Stack.Screen name="Another" component={AnotherScreen} />
+
+
+
+    </Stack.Navigator>
+  </NavigationContainer>
+);
+
+}
+
