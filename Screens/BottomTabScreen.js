@@ -17,7 +17,7 @@ function BottomTabScreen () {
       <Tab.Navigator 
       screenOptions={({ route }) => ({
         tabBarLabel: ({ focused }) => (
-          <Text style={{ color: focused ? "blue" : "gray" }}>{route.name}</Text>
+          <Text style={{ color: focused ? "#3F7CF1" : "gray" }}>{route.name}</Text>
         ),
         tabBarStyle:{
             borderTopWidth: 0.5,
@@ -32,7 +32,7 @@ function BottomTabScreen () {
                 <MaterialIcons
                   name="home"
                   size={24}
-                  color={focused ? "blue" : "gray"}
+                  color={focused ? "#3F7CF1" : "gray"}
                 />
               ),
             }}
@@ -44,7 +44,7 @@ function BottomTabScreen () {
               <MaterialIcons
                 name="note"
                 size={24}
-                color={focused ? "blue" : "gray"}
+                color={focused ? "#3F7CF1" : "gray"}
               />
             ),
           }} />
@@ -55,7 +55,7 @@ function BottomTabScreen () {
             <MaterialIcons
               name="article"
               size={24}
-              color={focused ? "blue" : "gray"}
+              color={focused ? "#3F7CF1" : "gray"}
             />
           ),
         }} />
