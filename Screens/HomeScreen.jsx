@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackActions } from '@react-navigation/native';
-import CustomButton from '../Component/CustomBotton';
+import CustomButton from '../component/CustomBotton';
 
 
 

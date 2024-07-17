@@ -3,8 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import BottomTabScreen from "./Screens/BottomTabScreen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./Screens/HomeScreen";
-import NoticeScreen from "./Screens/NoticeScreen";
-import TemplateScreen from "./Screens/PdfScreen";
+import PdfScreen from "./Screens/PdfScreen";
+import WordScreen from "./Screens/WordScreen";
 
 
 
@@ -18,8 +18,8 @@ return(
      component={BottomTabScreen} 
      options={{headerShown: false}} />
     <Stack.Screen name="home" component={HomeScreen} options={{headerShown: false}} />
-    <Stack.Screen name="notice" component ={NoticeScreen} options={{ headerShown: false }}/>
-    <Stack.Screen name="template" component={TemplateScreen} />
+    <Stack.Screen name="pdf" component ={PdfScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="word" component={WordScreen} />
     
 
 

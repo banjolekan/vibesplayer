@@ -1,24 +1,31 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-
-const CustomButton = ({onPress, text, textStyle, buttonStyle}) => {
+import { StackActions } from '@react-navigation/native';
+const CustomButton  = ({ title, onPress  }) => {
   return (
-    <View style={{width: '100%'}}>
-      <TouchableOpacity style={[styles.button, buttonStyle]} onPress={onPress}>
-        <Text style={[styles.text, textStyle]}>{text}</Text>
-      </TouchableOpacity>
-    </View>
-  )
-}
-
+   
+          <TouchableOpacity style={styles.button} onPress={onPress}>
+            <Text style={styles.buttonText}>{title}</Text>
+          </TouchableOpacity>
+        );
+      };
+      
+      const styles = StyleSheet.create({
+        button: {
+          backgroundColor: '#007BFF',
+          width: 32, 
+          height: 32, 
+          borderRadius: 50,
+          justifyContent: 'center',
+          alignItems: 'center',
+         
+        },
+        buttonText: {
+          color: '#FFFFFF', 
+          fontSize:30,
+        },
+        
+        
+      });
 export default CustomButton
 
-const styles = StyleSheet.create({
-    button:{
-        width: '100%',
-        paddingVertical: 16,
-    },
-    text:{
-        textAlign: "center",
-    }
-})
