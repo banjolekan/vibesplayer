@@ -21,7 +21,7 @@ const CustomButton  = ({ title, onPress  }) => {
          
         },
         buttonText: {
-          color: '#FFFFFF', 
+          color: '#FFFFFF',
           fontSize:30,
         },
         

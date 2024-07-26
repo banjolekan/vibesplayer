@@ -5,7 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./Screens/HomeScreen";
 import PdfScreen from "./Screens/PdfScreen";
 import WordScreen from "./Screens/WordScreen";
-
+import Upgrade from "./Screens/Upgrade";
+ 
 
 
 // const App = () => {
@@ -19,6 +20,7 @@ return(
      options={{headerShown: false}} />
     <Stack.Screen name="home" component={HomeScreen} options={{headerShown: false}} />
     <Stack.Screen name="pdf" component ={PdfScreen} options={{ headerShown: false }}/>
+    <Stack.Screen name="Upgrade" component ={Upgrade} options={{ headerShown: false }}/>
     <Stack.Screen name="word" component={WordScreen} />
     
 
@@ -29,4 +31,7 @@ return(
 );
 
 }
+
+
+
 

@@ -14,7 +14,7 @@ const PdfScreen = () => {
   const naviagtion = useNavigation();
 
 const handleNavigation = () =>{
-    naviagtion.navigate('')
+    naviagtion.navigate("Upgrade")
 }
 
   return (
